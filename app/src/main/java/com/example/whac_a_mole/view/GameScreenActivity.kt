@@ -37,7 +37,7 @@ class GameScreenActivity : AppCompatActivity() {
 
         val sharedPreference:SharedPreference= SharedPreference(this)
 
-        score = sharedPreference.getValueInt("score")
+        score = 0
 
         count_holes = intent.getIntExtra("size", 0)
 
@@ -112,7 +112,8 @@ class GameScreenActivity : AppCompatActivity() {
 
                     if(it.isClickable) {
                         imageView.setImageResource(R.drawable.ic_hole_test)
-                        score_txt.setText("Score: ${score++}")
+                        score++
+                        score_txt.setText("Score: ${score}")
                     }
                 }
 

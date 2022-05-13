@@ -15,6 +15,7 @@ class EndActivity : AppCompatActivity() {
 
     lateinit var score_txt:TextView
     lateinit var btn_toStart:Button
+    lateinit var btn_toMenu:Button
     lateinit var star1:View
     lateinit var star2:View
     lateinit var star3:View
@@ -55,6 +56,11 @@ class EndActivity : AppCompatActivity() {
         btn_toStart = findViewById(R.id.tryagain_btn_id)
         btn_toStart.setOnClickListener{
             val intent = Intent(this,GameScreenActivity::class.java)
+            startActivity(intent)
+        }
+        btn_toMenu = findViewById(R.id.goto_menu_btn_id)
+        btn_toMenu.setOnClickListener {
+            val intent = Intent(this,StartActivity::class.java)
             startActivity(intent)
         }
 
