@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_grass"
+    tools:context=".view.EndActivity">
+
+    <View
+        android:id="@+id/gameover_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:background="@drawable/gameover"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/gameover_score_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gameover_view_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/your_score"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:textSize="26sp"/>
+
+    <View
+        android:id="@+id/stars1_view_id"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:layout_constraintTop_toBottomOf="@id/gameover_score_txt_id"
+        app:layout_constraintRight_toRightOf="@id/stars2_view_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/ic_star"/>
+    <View
+        android:id="@+id/stars2_view_id"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:layout_constraintTop_toBottomOf="@id/gameover_score_txt_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="invisible"
+        android:background="@drawable/ic_star"/>
+    <View
+        android:id="@+id/stars3_view_id"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:layout_constraintTop_toBottomOf="@id/gameover_score_txt_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/stars2_view_id"
+        android:visibility="invisible"
+        android:background="@drawable/ic_star"/>
+
+    <TextView
+        android:id="@+id/gameover_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/stars1_view_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/do_you_want_try_again"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:textSize="26sp"/>
+    <Button
+        android:id="@+id/tryagain_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="52sp"
+        android:text="yes!"
+        app:layout_constraintTop_toBottomOf="@id/gameover_txt_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

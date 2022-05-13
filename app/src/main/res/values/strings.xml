@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Whac-A-Mole</string>
+    <string name="play">Play!</string>
+    <string name="settings">settings</string>
+    <string name="score">Score: 0 </string>
+    <string name="lives">Lives:</string>
+    <string name="time">Time:</string>
+    <string name="do_you_want_try_again">Do you want to try again?</string>
+    <string name="your_score">your score:</string>
+    <string name="reset_score">reset score</string>
+    <string name="max_score">Max score:</string>
+    <string name="rules">Rules: \n Hit the mole when he appears! \n The more points, the more stars you get!</string>
+    <string name="whac_a_mole">whac-a-mole!</string>
+    <string name="set_size_of_field">Set size of field:</string>
+</resources>
